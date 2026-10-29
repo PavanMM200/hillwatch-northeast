@@ -1,0 +1,113 @@
+{
+  "label": "REAL SATELLITE INPUTS / SYNTHETIC TEST CENTERLINE / NOT A DRIVING ROUTE OR ROAD STATUS",
+  "scenes": [
+    {
+      "scene_id": "COPERNICUS/S1_GRD/S1D_IW_GRDH_1SDV_20261007T114812_20261007T114837_004909_0093E3_132C",
+      "collection": "COPERNICUS/S1_GRD",
+      "acquired_at": "2026-10-07T11:48:12+00:00",
+      "coverage": 1.0,
+      "orbit": "ASCENDING",
+      "relative_orbit": 143,
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "cloud_percent": null,
+      "native_projection": "EPSG:32646",
+      "bands": [
+        "VV",
+        "VH"
+      ],
+      "units": "dB",
+      "nominal_resolution_m": 10,
+      "export_projection": "EPSG:32646",
+      "export_resolution_m": 10
+    },
+    {
+      "scene_id": "COPERNICUS/S1_GRD/S1D_IW_GRDH_1SDV_20261019T114812_20261019T114837_005084_0099E9_B8C7",
+      "collection": "COPERNICUS/S1_GRD",
+      "acquired_at": "2026-10-19T11:48:12+00:00",
+      "coverage": 1.0,
+      "orbit": "ASCENDING",
+      "relative_orbit": 143,
+      "polarizations": [
+        "VV",
+        "VH"
+      ],
+      "cloud_percent": null,
+      "native_projection": "EPSG:32646",
+      "bands": [
+        "VV",
+        "VH"
+      ],
+      "units": "dB",
+      "nominal_resolution_m": 10,
+      "export_projection": "EPSG:32646",
+      "export_resolution_m": 10
+    },
+    {
+      "scene_id": "COPERNICUS/S2_SR_HARMONIZED/20261014T041729_20261014T042732_T46REQ",
+      "collection": "COPERNICUS/S2_SR_HARMONIZED",
+      "acquired_at": "2026-10-14T04:31:07.091000+00:00",
+      "coverage": 0.999906235349273,
+      "orbit": null,
+      "relative_orbit": null,
+      "polarizations": [],
+      "cloud_percent": 3.367328,
+      "native_projection": "EPSG:32646",
+      "bands": [
+        "B4",
+        "B3",
+        "B2",
+        "B8"
+      ],
+      "units": "reflectance_scaled_10000",
+      "nominal_resolution_m": 10,
+      "export_projection": "EPSG:32646",
+      "export_resolution_m": 10
+    },
+    {
+      "scene_id": "COPERNICUS/S2_SR_HARMONIZED/20261019T041801_20261019T042217_T46REQ",
+      "collection": "COPERNICUS/S2_SR_HARMONIZED",
+      "acquired_at": "2026-10-19T04:31:08.732000+00:00",
+      "coverage": 1.0,
+      "orbit": null,
+      "relative_orbit": null,
+      "polarizations": [],
+      "cloud_percent": 0.126672,
+      "native_projection": "EPSG:32646",
+      "bands": [
+        "B4",
+        "B3",
+        "B2",
+        "B8"
+      ],
+      "units": "reflectance_scaled_10000",
+      "nominal_resolution_m": 10,
+      "export_projection": "EPSG:32646",
+      "export_resolution_m": 10
+    }
+  ],
+  "statistics": {
+    "valid_fraction": 0.8576687116564418,
+    "changed_pixels": 0,
+    "candidate_components": 0,
+    "mean_absolute_change_db": 2.2360440275461304,
+    "road_overlap": {
+      "intersection_pixels": 0,
+      "intersection_area_m2": 0,
+      "potential_impact": false,
+      "confirmed_blockage": false
+    },
+    "algorithm": "experimental-sar-ndvi-v1",
+    "segment_id": "TEST-CORRIDOR-NOT-A-DRIVING-ROUTE",
+    "processed_at": "2026-10-28T18:39:59Z",
+    "optical_support_pixels": 0,
+    "experimental": true,
+    "warnings": [
+      "SAR shadow and layover are not fully corrected; steep-slope masking cannot eliminate terrain artifacts.",
+      "SRTM is static historical elevation (~February 2000); 30 m native data resampled to the 10 m analysis grid.",
+      "20 m road-width assumption and satellite pixel size limit physical obstruction inference."
+    ]
+  }
+}

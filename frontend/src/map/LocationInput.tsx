@@ -1,0 +1,1 @@
+export default function LocationInput({label,value,onChange,placeholder}:{label:string;value:string;onChange:(v:string)=>void;apiKey:string;placeholder:string}){return <label className="location-input">{label}<input value={value} onChange={e=>onChange(e.target.value)} required minLength={3} placeholder={placeholder}/></label>}

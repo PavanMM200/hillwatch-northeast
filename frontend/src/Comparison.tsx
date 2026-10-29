@@ -1,0 +1,6 @@
+export default function Comparison({artifacts,section}:{artifacts:any[];section:any}){
+ const files=artifacts.filter(a=>a.name.startsWith(section?.segment.id+'/'));
+ const find=(name:string)=>files.find(a=>a.name.split('/').at(-1)===name);
+ const panel=(name:string,label:string)=>{const a=find(name);return <figure><figcaption>{label}</figcaption>{a?<a href={a.url} target="_blank" rel="noreferrer"><img src={a.url} alt={label}/></a>:<p>Image unavailable for this section.</p>}</figure>};
+ return <section className="comparison"><h2>Radar · before and after</h2><p>Compare the same road section. Radar brightness represents backscatter, not a photograph. Acquisition dates are listed below.</p><div className="comparison-grid">{panel('sar_before.png','01 / BEFORE · SAR')}{panel('sar_after.png','02 / AFTER · SAR')}{panel('sar_change.png','03 / DETECTED CHANGE')}</div>{(find('optical_before.png')||find('optical_after.png'))&&<><h3>Optical comparison</h3><div className="comparison-grid">{panel('optical_before.png','BEFORE · optical')}{panel('optical_after.png','AFTER · optical')}</div></>}<p>Map legend: cyan = mapped road centreline; dashed yellow = analysis corridor; orange = detected surface-change patches. These are not measured road edges or confirmed blockages.</p></section>
+}
